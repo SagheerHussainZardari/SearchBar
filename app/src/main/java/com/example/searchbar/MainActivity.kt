@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val listNames = ArrayList<String>()
 
         Toast.makeText(this, "This is juxt for fun", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
 
         for(i in 0..4)
             listNames.add(list[i].name)
