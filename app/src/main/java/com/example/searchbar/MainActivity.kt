@@ -1,10 +1,9 @@
 package com.example.searchbar
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
-import android.widget.*
+import android.widget.ArrayAdapter
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         list.add(studnetsData("love" , "2k17/CSE/123",3.8))
 
         val listNames = ArrayList<String>()
+
+        Toast.makeText(this, "This is juxt for fun", Toast.LENGTH_SHORT).show()
 
         for(i in 0..4)
             listNames.add(list[i].name)
