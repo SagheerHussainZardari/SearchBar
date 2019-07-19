@@ -23,12 +23,17 @@ class MainActivity : AppCompatActivity() {
 
         Toast.makeText(this, "This is juxt for fun", Toast.LENGTH_SHORT).show()
         Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "This is juxt for fun2", Toast.LENGTH_SHORT).show()
 
         for(i in 0..4)
             listNames.add(list[i].name)
 
         val adapter = ArrayAdapter<String>(this , android.R.layout.simple_list_item_1, listNames)
         autoComplete.setAdapter(adapter)
+
 
         autoComplete.setOnItemClickListener { adapterView, view, i, l ->
 
